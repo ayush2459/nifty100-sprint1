@@ -1,0 +1,40 @@
+# =============================================================================
+# requirements.txt — Nifty 100 Financial Analytics Platform
+# Sprint 1 · Data Foundation
+# Install: pip install -r requirements.txt
+# =============================================================================
+
+# ── Core data stack ─────────────────────────────────────────────────────────
+pandas==2.2.2           # DataFrame manipulation, Excel/CSV reading
+numpy==1.26.4           # Numerical operations, array math
+openpyxl==3.1.2         # Read/write .xlsx files (pandas engine)
+xlrd==2.0.1             # Legacy .xls support
+
+# ── Database ─────────────────────────────────────────────────────────────────
+# sqlite3 is stdlib — no install needed
+
+# ── Finance & analytics ──────────────────────────────────────────────────────
+scipy==1.13.0           # Statistical tests, regression utilities
+scikit-learn==1.4.2     # Clustering, preprocessing (future sprints)
+
+# ── Visualisation ────────────────────────────────────────────────────────────
+plotly==5.22.0          # Interactive charts (dashboard)
+matplotlib==3.8.4       # Static charts for PDF reports
+seaborn==0.13.2         # Statistical plots
+
+# ── Dashboard & API ──────────────────────────────────────────────────────────
+streamlit==1.35.0       # Interactive dashboard (Sprint 4)
+fastapi==0.111.0        # REST API (Sprint 4)
+uvicorn[standard]==0.30.1  # ASGI server for FastAPI
+
+# ── HTTP / config ────────────────────────────────────────────────────────────
+requests==2.32.2        # HTTP requests (data fetching utilities)
+python-dotenv==1.0.1    # Load .env files
+
+# ── Document generation ───────────────────────────────────────────────────────
+reportlab==4.2.0        # PDF report generation (Sprint 3)
+python-pptx==0.6.23     # PPTX slide generation (Sprint 3)
+
+# ── Testing ──────────────────────────────────────────────────────────────────
+pytest==8.2.2           # Test runner
+pytest-cov==5.0.0       # Coverage reporting
